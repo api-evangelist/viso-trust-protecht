@@ -1,0 +1,75 @@
+generated: '2026-07-21'
+method: derived
+source: openapi/viso-trust-protecht-openapi-original.json
+entities:
+- name: Relationship
+  description: The central record for a third-party vendor engagement; anchors every assessment, score, and advisory.
+- name: Assessment
+  description: A vendor risk assessment tied to a relationship, with status history and recommendations.
+- name: Questionnaire
+  description: A structured questionnaire configurable per organization and enabled per relationship.
+- name: VendorDirectory
+  description: Pre-populated third-party vendor profiles used to seed relationships and instant assessments.
+- name: VendorRiskSummary
+  description: Aggregate risk summary for a vendor, keyed by vendor id or name/domain.
+- name: ExternalIntelligenceReport
+  description: BitSight / Recorded Future / SecurityScorecard intelligence reports attached to a vendor.
+- name: Webhook
+  description: Registered outbound webhook endpoint for assessment/relationship events.
+- name: User
+  description: An organization user (Admin, Program Manager, Contributor, Viewer) or service account.
+- name: DataType
+  description: A classification of data shared with a vendor; drives inherent-risk impact scoring.
+- name: ContextType
+  description: A business case / context describing how a vendor is used.
+- name: AuditEvent
+  description: An audit-log event for a user/organization action.
+relationships:
+- from: Relationship
+  to: Assessment
+  kind: has_one
+  via: latestAssessment
+- from: Relationship
+  to: Assessment
+  kind: has_many
+  via: /api/v1/relationship/{id}/assessments (getAssessmentsForRelationship)
+- from: Relationship
+  to: ContextType
+  kind: has_many
+  via: contextTypes
+- from: Relationship
+  to: DataType
+  kind: has_many
+  via: dataTypes
+- from: Relationship
+  to: User
+  kind: belongs_to
+  via: businessOwner
+- from: Relationship
+  to: User
+  kind: belongs_to
+  via: assessmentLead
+- from: Relationship
+  to: User
+  kind: has_many
+  via: subscribers
+- from: Relationship
+  to: Questionnaire
+  kind: has_many
+  via: /api/v1/relationships/{id}/questionnaires
+- from: Assessment
+  to: User
+  kind: belongs_to
+  via: sentBy
+- from: VendorRiskSummary
+  to: Relationship
+  kind: has_many
+  via: relationships
+- from: ExternalIntelligenceReport
+  to: VendorDirectory
+  kind: belongs_to
+  via: vendorOrgId
+notes: >-
+  Derived from OpenAPI schema $ref links and id-reference fields. No id-prefix
+  scheme is documented; ids are int64 (relationships/assessments/webhooks/users)
+  or opaque guids (external intelligence reports).

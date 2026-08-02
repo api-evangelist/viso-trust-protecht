@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: derived
+source: openapi/viso-trust-protecht-openapi-original.json
+standards:
+- id: oauth2
+  conforms: false
+  evidence: Only http bearer securityScheme; no oauth2 flows declared.
+- id: oidc
+  conforms: false
+- id: http-bearer
+  conforms: true
+  evidence: securitySchemes.bearerAuth type http scheme bearer, applied globally.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No application/problem+json responses documented (spec declares only 200s).
+- id: json:api
+  conforms: false
+- id: openapi-3.1
+  conforms: true
+  evidence: Published spec is OpenAPI 3.1.0.
+- id: pagination
+  conforms: true
+  evidence: page/size query parameters on list and search endpoints.
+- id: webhooks
+  conforms: true
+  evidence: Outbound webhook registration API with a 15-event catalog (asyncapi/viso-trust-protecht-webhooks.yml).
+- id: fhir
+  conforms: false
+- id: scim
+  conforms: false
+- id: odata
+  conforms: false
+- id: fapi
+  conforms: false
+notes: >-
+  Derived from the published OpenAPI. VISO TRUST's own compliance certifications
+  are not published on a public trust page (the security-and-privacy doc directs
+  requests for certifications to support@visotrust.com), so no Compliance pointer
+  is emitted.

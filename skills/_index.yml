@@ -1,0 +1,16 @@
+generated: '2026-07-21'
+method: generated
+source: openapi/viso-trust-protecht-openapi-original.json
+skills:
+- file: viso-trust-protecht-onboard-vendor.md
+  name: Onboard a vendor and start an assessment
+  api: openapi/viso-trust-protecht-openapi-original.json
+  operations: [createRelationshipAsCurrentUserByDomain, createAssessment, getAssessment, getAssessmentSummary]
+- file: viso-trust-protecht-pull-risk-summary.md
+  name: Look up a vendor's risk summary
+  api: openapi/viso-trust-protecht-openapi-original.json
+  operations: [getVendorDirectoryByDomainOrUrl, getVendorRiskSummaryByNameOrDomain, getIntelligenceReportsByVendor]
+- file: viso-trust-protecht-register-webhook.md
+  name: Register a webhook for assessment events
+  api: openapi/viso-trust-protecht-openapi-original.json
+  operations: [registerWebhook, getAllWebhooksForClient, getWebhookByIdForClient, deleteWebhook]

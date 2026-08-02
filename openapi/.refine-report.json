@@ -1,0 +1,36 @@
+{
+  "provider": "viso-trust-protecht",
+  "sources": [
+    "viso-trust-protecht-client-api-assessment-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-audit-log-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-chat-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-context-type-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-data-type-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-external-intelligence-report-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-questionnaire-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-relationship-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-user-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-vendor-directory-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-vendor-risk-summary-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-webhook-rest-resource-api-openapi.yml"
+  ],
+  "outputs": [
+    "viso-trust-protecht-client-api-assessment-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-audit-log-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-chat-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-context-type-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-data-type-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-external-intelligence-report-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-questionnaire-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-relationship-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-user-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-vendor-directory-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-vendor-risk-summary-rest-resource-api-openapi.yml",
+    "viso-trust-protecht-client-api-webhook-rest-resource-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

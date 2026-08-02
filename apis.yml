@@ -1,8 +1,30 @@
 aid: viso-trust-protecht
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/viso-trust-protecht.png
 name: VISO Trust (Protecht)
-description: 'VISO Trust (Protecht) is a company surfaced as a portfolio company of bain-capital-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: security. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: >-
+  VISO TRUST is an AI-powered third-party risk management (TPRM) platform that automates vendor
+  security due diligence — document analysis via Artifact Intelligence, inherent/residual risk
+  scoring, questionnaire automation, vendor discovery, and continuous monitoring with risk
+  advisories. Its public Client API (bearer-token authenticated, served from
+  https://app.visotrust.com/api/v1) lets security programs create and manage vendor relationships,
+  start and retrieve assessments, export assessment summaries, pull vendor risk summaries and
+  external intelligence reports (BitSight, Recorded Future, SecurityScorecard), query the vendor
+  directory, manage users, read audit logs, and register outbound webhooks across a 15-event
+  catalog. A hosted MCP server (mcp.visotrust.com) exposes the same surface to AI agents using the
+  same token. Surfaced as a portfolio company of Bain Capital Ventures and enriched from the
+  provider's public developer documentation.
 url: https://raw.githubusercontent.com/api-evangelist/viso-trust-protecht/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +34,255 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Security
-apis: []
+- Third-Party Risk Management
+- Vendor Risk Management
+- TPRM
+- GRC
+- Cybersecurity
+- Compliance
+- Artificial Intelligence
+apis:
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-assessment-rest-resource-api
+  name: VISO Trust (Protecht) client-api-assessment-rest-resource API
+  description: >-
+    The client-api-assessment-rest-resource API from VISO Trust (Protecht) — 7 operation(s) for client-api-assessment-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-assessment-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-assessment-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-audit-log-rest-resource-api
+  name: VISO Trust (Protecht) client-api-audit-log-rest-resource API
+  description: >-
+    The client-api-audit-log-rest-resource API from VISO Trust (Protecht) — 2 operation(s) for client-api-audit-log-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-audit-log-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-audit-log-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-chat-rest-resource-api
+  name: VISO Trust (Protecht) client-api-chat-rest-resource API
+  description: >-
+    The client-api-chat-rest-resource API from VISO Trust (Protecht) — 1 operation(s) for client-api-chat-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-chat-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-chat-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-context-type-rest-resource-api
+  name: VISO Trust (Protecht) client-api-context-type-rest-resource API
+  description: >-
+    The client-api-context-type-rest-resource API from VISO Trust (Protecht) — 1 operation(s) for client-api-context-type-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-context-type-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-context-type-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-data-type-rest-resource-api
+  name: VISO Trust (Protecht) client-api-data-type-rest-resource API
+  description: >-
+    The client-api-data-type-rest-resource API from VISO Trust (Protecht) — 1 operation(s) for client-api-data-type-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-data-type-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-data-type-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: >-
+    viso-trust-protecht:viso-trust-protecht-client-api-external-intelligence-report-rest-resource-api
+  name: VISO Trust (Protecht) client-api-external-intelligence-report-rest-resource API
+  description: >-
+    The client-api-external-intelligence-report-rest-resource API from VISO Trust (Protecht) — 8 operation(s)
+    for client-api-external-intelligence-report-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-external-intelligence-report-rest-resource
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/viso-trust-protecht-client-api-external-intelligence-report-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-questionnaire-rest-resource-api
+  name: VISO Trust (Protecht) client-api-questionnaire-rest-resource API
+  description: >-
+    The client-api-questionnaire-rest-resource API from VISO Trust (Protecht) — 2 operation(s) for client-api-questionnaire-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-questionnaire-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-questionnaire-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-relationship-rest-resource-api
+  name: VISO Trust (Protecht) client-api-relationship-rest-resource API
+  description: >-
+    The client-api-relationship-rest-resource API from VISO Trust (Protecht) — 11 operation(s) for client-api-relationship-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-relationship-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-relationship-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-user-rest-resource-api
+  name: VISO Trust (Protecht) client-api-user-rest-resource API
+  description: >-
+    The client-api-user-rest-resource API from VISO Trust (Protecht) — 2 operation(s) for client-api-user-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-user-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-user-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-vendor-directory-rest-resource-api
+  name: VISO Trust (Protecht) client-api-vendor-directory-rest-resource API
+  description: >-
+    The client-api-vendor-directory-rest-resource API from VISO Trust (Protecht) — 1 operation(s) for
+    client-api-vendor-directory-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-vendor-directory-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-vendor-directory-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-vendor-risk-summary-rest-resource-api
+  name: VISO Trust (Protecht) client-api-vendor-risk-summary-rest-resource API
+  description: >-
+    The client-api-vendor-risk-summary-rest-resource API from VISO Trust (Protecht) — 2 operation(s) for
+    client-api-vendor-risk-summary-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-vendor-risk-summary-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-vendor-risk-summary-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
+- aid: viso-trust-protecht:viso-trust-protecht-client-api-webhook-rest-resource-api
+  name: VISO Trust (Protecht) client-api-webhook-rest-resource API
+  description: >-
+    The client-api-webhook-rest-resource API from VISO Trust (Protecht) — 2 operation(s) for client-api-webhook-rest-resource.
+  humanURL: https://docs.visotrust.com/
+  baseURL: https://app.visotrust.com/api/v1
+  tags:
+  - client-api-webhook-rest-resource
+  properties:
+  - type: OpenAPI
+    url: openapi/viso-trust-protecht-client-api-webhook-rest-resource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.visotrust.com/
+  - type: APIReference
+    url: https://docs.visotrust.com/api-reference/authentication
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: OpenAPI
+  url: openapi/viso-trust-protecht-openapi-original.json
+- type: Documentation
+  url: https://docs.visotrust.com/
+- type: APIReference
+  url: https://docs.visotrust.com/api-reference/authentication
+- type: GettingStarted
+  url: https://docs.visotrust.com/getting-started/quick-start
+- type: Authentication
+  url: authentication/viso-trust-protecht-authentication.yml
+- type: MCPServer
+  url: mcp/viso-trust-protecht-mcp.yml
+- type: LLMsTxt
+  url: llms/viso-trust-protecht-llms.txt
+- type: Webhooks
+  url: asyncapi/viso-trust-protecht-webhooks.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Overlay
+  url: overlays/viso-trust-protecht-openapi-overlay.yaml
+- type: Conventions
+  url: conventions/viso-trust-protecht-conventions.yml
+- type: DataModel
+  url: data-model/viso-trust-protecht-data-model.yml
+- type: Conformance
+  url: conformance/viso-trust-protecht-conformance.yml
+- type: Lifecycle
+  url: lifecycle/viso-trust-protecht-lifecycle.yml
+- type: StatusPage
+  url: https://status.visotrust.com
+- type: ChangeLog
+  url: changelog/viso-trust-protecht-changelog.yml
+- type: VulnerabilityDisclosure
+  url: security/viso-trust-protecht-vulnerability-disclosure.yml
+- type: Security
+  url: https://docs.visotrust.com/resources/security-and-privacy
+- type: DomainSecurity
+  url: security/viso-trust-protecht-domain-security.yml
+- type: Support
+  url: https://support.visotrust.com
+- type: Login
+  url: https://app.visotrust.com
 - type: Website
   url: https://visotrust.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 18
+  pass: local-v1

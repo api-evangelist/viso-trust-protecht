@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.visotrust.com/resources/changelog.md
+scheme: semver-dated
+cadence: Published with every platform update.
+current_version: v3.53.1
+entries:
+- version: v3.53.1
+  date: '2026-07-10'
+  breaking: false
+  highlights:
+  - Fixed the Integrations page failing to load when a Workato connection was configured.
+- version: v3.53.0
+  date: '2026-07-09'
+  breaking: false
+  additions:
+  - Added filtering options to the relationship search endpoint in the Client API.
+  - API documentation now published publicly at docs.visotrust.com.
+  - Vendor directory profile gained a Relationships view with executive summary, Details tab, and vendor-specific risk advisories.
+  highlights:
+  - AI controls now scope only from the AI Systems intake question (behavior change for new assessments scoped from July 9 onward).
+  - Refreshed the application color palette.
+- version: v3.52.2
+  date: '2026-06-30'
+  breaking: false
+  highlights:
+  - Resolved detections not displaying on Trust to Artifact Intelligence.
+- version: v3.52.1
+  date: '2026-06-26'
+  breaking: false
+  highlights:
+  - Resolved an issue with the new Admin user role.
+- version: v3.52.0
+  date: '2026-06-25'
+  breaking: false
+  additions:
+  - Assessment Lead role to run a vendor assessment separate from the Business Owner.
+  - Control validation side panel breaking down control weight, evidence, and mitigation.
+  highlights:
+  - Artifact glossary assurance-level definitions clarified.
+  - Reduced irrelevant public documents pulled into assessments.

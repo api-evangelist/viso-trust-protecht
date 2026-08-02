@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: openapi/viso-trust-protecht-openapi-original.json
+docs: https://docs.visotrust.com/api-reference/authentication
+summary:
+  types:
+  - http
+  http_schemes:
+  - bearer
+base_url: https://app.visotrust.com
+token_model:
+  source: Generated once from an Admin or Program Manager user profile, or a dedicated service account.
+  storage: Shown only at generation; store in a secrets manager (not retrievable later).
+  permissions: Program-level access required; Contributor/Viewer tokens are rejected.
+  same_token_for_mcp: true
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: >-
+    API token generated from your VISO TRUST user profile. Send it in the
+    `Authorization` header as `Bearer <token>`. The same token authenticates the
+    hosted MCP server at https://mcp.visotrust.com/sse.
+  sources:
+  - openapi/viso-trust-protecht-openapi-original.json

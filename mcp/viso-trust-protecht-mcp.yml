@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+status: published
+source: https://docs.visotrust.com/api-reference/authentication.md
+server:
+  name: viso-trust
+  transport: sse
+  url: https://mcp.visotrust.com/sse
+  auth:
+    type: http-bearer
+    description: >-
+      Authenticated with the same VISO TRUST API token used for the REST Client
+      API (generated from an Admin or Program Manager user profile / service
+      account). Pass it as a bearer token to the MCP server.
+notes: >-
+  VISO TRUST documents a hosted remote MCP server at https://mcp.visotrust.com/sse
+  for AI tool integrations, sharing the same bearer-token auth and operation
+  surface as the REST Client API. A plain unauthenticated GET to the endpoint
+  returns HTTP 404 (SSE handshake + auth required), which is expected for a
+  gated MCP SSE transport; the server is documented as published, not derived.
+probe:
+  url: https://mcp.visotrust.com/sse
+  unauthenticated_get_status: 404

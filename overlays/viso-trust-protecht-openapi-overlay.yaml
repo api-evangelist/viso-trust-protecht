@@ -1,0 +1,23 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for VISO TRUST Client API
+  version: 1.0.0
+extends: openapi/viso-trust-protecht-openapi-original.json
+actions:
+- target: $.info
+  update:
+    x-apievangelist-enriched: '2026-07-21'
+    x-apievangelist-provider: viso-trust-protecht
+    x-apievangelist-mcp-server: https://mcp.visotrust.com/sse
+    x-apievangelist-status-page: https://status.visotrust.com
+    x-apievangelist-changelog: https://docs.visotrust.com/resources/changelog
+- target: $.info
+  update:
+    x-apievangelist-notes: >-
+      Bearer-token (http) auth, served from https://app.visotrust.com/api/v1.
+      Outbound webhooks with a 15-event catalog. Published spec documents only
+      200 responses; no error-envelope or problem+json schema is specified — a
+      gap surfaced for a follow-up with the provider.
+- target: $.components.securitySchemes.bearerAuth
+  update:
+    x-apievangelist-auth-profile: authentication/viso-trust-protecht-authentication.yml

@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/* on VISO TRUST hosts
+hosts:
+- host: https://visotrust.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://app.visotrust.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 401
+  - path: /.well-known/openid-configuration
+    status: 401
+  - path: /.well-known/oauth-authorization-server
+    status: 401
+  - path: /.well-known/api-catalog
+    status: 401
+notes: >-
+  No public /.well-known discovery documents are published. The marketing host
+  (visotrust.com) returns 404 for all probed paths; the application host
+  (app.visotrust.com) gates every path behind auth (401). No files saved and no
+  WellKnown/SecurityTxt pointer emitted — absence is recorded as valid data.

@@ -1,0 +1,55 @@
+generated: '2026-07-21'
+method: searched
+type: Webhooks
+source: https://docs.visotrust.com/api-reference/client-api-webhook-rest-resource/register-a-webhook.md
+spec_type: Webhooks
+summary: >-
+  VISO TRUST publishes an outbound webhook surface. Clients register webhook
+  endpoints via the REST Client API (POST /api/v1/webhooks) and receive event
+  callbacks when assessments and relationships change state. Delivery targets
+  include a generic HTTP endpoint plus native Slack, Discord, Microsoft Teams,
+  and Workato services.
+management_operations:
+  register: registerWebhook            # POST   /api/v1/webhooks
+  update: updateWebhook                # PUT    /api/v1/webhooks
+  list: getAllWebhooksForClient        # GET    /api/v1/webhooks
+  get: getWebhookByIdForClient         # GET    /api/v1/webhooks/{webhookId}
+  delete: deleteWebhook                # DELETE /api/v1/webhooks/{webhookId}
+source_spec: openapi/viso-trust-protecht-openapi-original.json
+service_types:
+- GENERIC
+- SLACK
+- DISCORD
+- TEAMS
+- WORKATO
+event_types:
+- id: ASSESSMENT_COMPLETED
+  description: A vendor assessment finished.
+- id: ASSESSMENT_RECERTIFICATION_COMPLETED
+  description: A recertification assessment finished.
+- id: ASSESSMENT_REMEDIATION_COMPLETED
+  description: Remediation work on an assessment finished.
+- id: ASSESSMENT_ARTIFACT_UPDATE_COMPLETED
+  description: An assessment's artifacts were updated.
+- id: DOCS_ONLY_ARTIFACT_UPDATE_COMPLETED
+  description: A documents-only artifact update completed.
+- id: ASSESSMENT_REMINDER
+  description: A reminder fired for an outstanding assessment.
+- id: ASSESSMENT_CANCELLED
+  description: An assessment was cancelled.
+- id: ASSESSMENT_CANCELLED_BY_AUDITOR
+  description: An assessment was cancelled by the auditor.
+- id: ASSESSMENT_AUTOMATICALLY_CANCELLED
+  description: An assessment was automatically cancelled.
+- id: UPCOMING_RECERTIFICATION
+  description: A recertification is coming due.
+- id: RELATIONSHIP_ONBOARDED
+  description: A vendor relationship was onboarded.
+- id: RISK_ACCEPTED
+  description: Risk was accepted on a relationship.
+- id: RELATIONSHIP_OVERDUE
+  description: A relationship review is overdue.
+- id: ARTIFACT_EXPIRING
+  description: An artifact is approaching expiration.
+- id: ARTIFACT_EXPIRED
+  description: An artifact has expired.

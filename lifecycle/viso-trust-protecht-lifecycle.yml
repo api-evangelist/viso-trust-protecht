@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.visotrust.com/
+versioning:
+  scheme: uri-path
+  current: v1
+  base_path: /api/v1
+  docs: https://docs.visotrust.com/api-reference/authentication
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: >-
+    No formal deprecation/sunset policy is published. One operation is marked
+    deprecated in the OpenAPI (search-for-relationships by domain/name, superseded
+    by the filter-criteria relationship search).
+status_page: https://status.visotrust.com
+changelog: https://docs.visotrust.com/resources/changelog
+deprecated_operations:
+- openapi/viso-trust-protecht-openapi-original.json#getSearchRelationshipsAsCurrentUser

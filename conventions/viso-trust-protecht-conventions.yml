@@ -1,0 +1,37 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.visotrust.com/api-reference/authentication.md
+authentication:
+  style: bearer-token
+  header: 'Authorization: Bearer <token>'
+  token_source: Generated from an Admin or Program Manager user profile (or a dedicated service account); shown once at generation.
+  permissions: Program-level access required; Contributor/Viewer tokens are rejected.
+  cross_ref: authentication/viso-trust-protecht-authentication.yml
+base_url: https://app.visotrust.com
+versioning:
+  style: uri-path
+  current: v1
+  cross_ref: lifecycle/viso-trust-protecht-lifecycle.yml
+pagination:
+  style: page-number
+  params:
+  - name: page
+    in: query
+    description: Zero/one-based page index (used by list/search endpoints).
+  - name: size
+    in: query
+    description: Page size.
+  derived_from: openapi/viso-trust-protecht-openapi-original.json
+idempotency:
+  supported: false
+  notes: No idempotency-key header or contract is documented; not emitting an Idempotency pointer.
+error_envelope:
+  documented: false
+  notes: >-
+    The published OpenAPI documents only 200 responses; no error envelope or
+    problem+json schema is specified. Standard bearer-auth failures (401/403)
+    apply per the authentication docs.
+rate_limiting:
+  documented: false
+webhooks:
+  cross_ref: asyncapi/viso-trust-protecht-webhooks.yml
