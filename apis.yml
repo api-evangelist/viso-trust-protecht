@@ -238,7 +238,7 @@ maintainers:
   email: info@apis.io
 common:
 - type: OpenAPI
-  url: openapi/viso-trust-protecht-openapi-original.json
+  url: openapi/_original/viso-trust-protecht-openapi-original.json
 - type: Documentation
   url: https://docs.visotrust.com/
 - type: APIReference
