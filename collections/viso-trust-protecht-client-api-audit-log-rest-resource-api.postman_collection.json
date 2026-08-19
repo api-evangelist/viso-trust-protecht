@@ -1,0 +1,245 @@
+{
+  "item": [
+    {
+      "id": "75658bd5-ac38-4a11-b363-2f5edbd5d397",
+      "name": "client-api-audit-log-rest-resource",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "c45ef094-01ed-40d7-b95d-893180e2d34a",
+          "name": "Get all user audit log events for your organization in the time frame, limited to 500 records",
+          "request": {
+            "name": "Get all user audit log events for your organization in the time frame, limited to 500 records",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "audit-log",
+                "user-events"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "null",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "b0bcf5fc-6b4e-414d-83cf-6e9cc5c8dec3",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "audit-log",
+                    "user-events"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "null",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"auditEventType\": \"USER_UNSUBSCRIBED\",\n    \"dateTime\": \"1959-10-20T14:30:32.069Z\",\n    \"email\": \"string\",\n    \"userId\": 1417\n  },\n  {\n    \"auditEventType\": \"USER_CREATED\",\n    \"dateTime\": \"1996-03-01T07:51:57.170Z\",\n    \"email\": \"string\",\n    \"userId\": 1330\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1b06a836-19e4-4b0c-930d-1405912cf4da",
+          "name": "Get filtered audit log events based on specific types and categories for your organization, limited to 500 records",
+          "request": {
+            "name": "Get filtered audit log events based on specific types and categories for your organization, limited to 500 records",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "audit-log",
+                "events"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "null",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "5e9bba34-ef62-4501-8a58-e7ddc23ef38b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "audit-log",
+                    "events"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "null",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"auditEventType\": {\n      \"name\": \"string\"\n    },\n    \"dateTime\": \"1973-11-25T01:27:17.769Z\"\n  },\n  {\n    \"auditEventType\": {\n      \"name\": \"string\"\n    },\n    \"dateTime\": \"1947-11-11T01:54:09.188Z\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://app.visotrust.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "b3f8e127-ee2d-47b9-9fe7-3a263839973f",
+    "name": "VISO TRUST API Documentation client-api-assessment-rest-resource client-api-audit-log-rest-resource API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "VISO TRUST",
+      "type": "text/plain"
+    }
+  }
+}

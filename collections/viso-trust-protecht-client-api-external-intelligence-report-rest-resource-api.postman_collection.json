@@ -1,0 +1,875 @@
+{
+  "item": [
+    {
+      "id": "855ba4ae-b8b3-40d3-adf8-dd640a6a658b",
+      "name": "client-api-external-intelligence-report-rest-resource",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1c0ef9ea-9fa2-4c36-9779-0981860187c0",
+          "name": "Create a new SecurityScorecard intelligence report",
+          "request": {
+            "name": "Create a new SecurityScorecard intelligence report",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "external-intelligence-reports",
+                "security-scorecard"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "null",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "62618374-8ad1-498a-93bd-b74882d2eed8",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "external-intelligence-reports",
+                    "security-scorecard"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "null",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"06557808-4e17-b9ae-e605-332565f2a1f9\",\n  \"clientOrgId\": 8561,\n  \"clientOrgName\": \"string\",\n  \"vendorOrgId\": 3266,\n  \"vendorOrgName\": \"string\",\n  \"vendorOrgDescription\": \"string\",\n  \"vendorOrgFaviconUrl\": \"string\",\n  \"source\": \"BITSIGHT\",\n  \"reportDate\": \"1962-04-06T09:13:15.706Z\",\n  \"link\": \"string\",\n  \"rating\": \"string\",\n  \"typeName\": \"string\",\n  \"guid\": \"string\",\n  \"customId\": \"string\",\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"primaryDomain\": \"string\",\n  \"ratingRange\": \"string\",\n  \"ratingColor\": \"string\",\n  \"confidence\": \"string\",\n  \"ratingValue\": 6235,\n  \"grade\": \"string\",\n  \"domain\": \"string\",\n  \"score\": 6374,\n  \"triggeredRuleCount\": 6125,\n  \"maxRuleCount\": 8822,\n  \"firstSeen\": \"1987-10-16T11:19:10.986Z\",\n  \"lastSeen\": \"1995-05-02T21:16:24.398Z\",\n  \"criticalityLabel\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e590dadb-4254-4951-9c0d-69fef97b2f0f",
+          "name": "Bulk create SecurityScorecard intelligence reports",
+          "request": {
+            "name": "Bulk create SecurityScorecard intelligence reports",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "external-intelligence-reports",
+                "security-scorecard",
+                "bulk"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  null,\n  null\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "27dca51c-9299-4ed3-845a-f3181c3fb568",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "external-intelligence-reports",
+                    "security-scorecard",
+                    "bulk"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n  null,\n  null\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"totalCount\": 5022,\n  \"created\": [\n    \"0be1df0e-5dc4-def4-8c5f-e0c23bc14c7b\",\n    \"a1343a14-b724-5fc7-44a4-ac12cfcc1cdc\"\n  ],\n  \"backgroundedCount\": 7555,\n  \"backgrounded\": true,\n  \"totalFailureCount\": 6090\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fb5f3d6b-47b9-40dc-922c-92591349b648",
+          "name": "Create a new Recorded Future intelligence report",
+          "request": {
+            "name": "Create a new Recorded Future intelligence report",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "external-intelligence-reports",
+                "recorded-future"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "null",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "f350d415-4b63-4b28-b6f3-6c1918a28b0c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "external-intelligence-reports",
+                    "recorded-future"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "null",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"06557808-4e17-b9ae-e605-332565f2a1f9\",\n  \"clientOrgId\": 8561,\n  \"clientOrgName\": \"string\",\n  \"vendorOrgId\": 3266,\n  \"vendorOrgName\": \"string\",\n  \"vendorOrgDescription\": \"string\",\n  \"vendorOrgFaviconUrl\": \"string\",\n  \"source\": \"BITSIGHT\",\n  \"reportDate\": \"1962-04-06T09:13:15.706Z\",\n  \"link\": \"string\",\n  \"rating\": \"string\",\n  \"typeName\": \"string\",\n  \"guid\": \"string\",\n  \"customId\": \"string\",\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"primaryDomain\": \"string\",\n  \"ratingRange\": \"string\",\n  \"ratingColor\": \"string\",\n  \"confidence\": \"string\",\n  \"ratingValue\": 6235,\n  \"grade\": \"string\",\n  \"domain\": \"string\",\n  \"score\": 6374,\n  \"triggeredRuleCount\": 6125,\n  \"maxRuleCount\": 8822,\n  \"firstSeen\": \"1987-10-16T11:19:10.986Z\",\n  \"lastSeen\": \"1995-05-02T21:16:24.398Z\",\n  \"criticalityLabel\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "93e7d779-9969-4505-8913-bab31bbbe438",
+          "name": "Bulk create Recorded Future intelligence reports",
+          "request": {
+            "name": "Bulk create Recorded Future intelligence reports",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "external-intelligence-reports",
+                "recorded-future",
+                "bulk"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  null,\n  null\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "23dd3a3f-79ec-4351-ba87-15dcaa513afe",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "external-intelligence-reports",
+                    "recorded-future",
+                    "bulk"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n  null,\n  null\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"totalCount\": 5022,\n  \"created\": [\n    \"0be1df0e-5dc4-def4-8c5f-e0c23bc14c7b\",\n    \"a1343a14-b724-5fc7-44a4-ac12cfcc1cdc\"\n  ],\n  \"backgroundedCount\": 7555,\n  \"backgrounded\": true,\n  \"totalFailureCount\": 6090\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3c61afc0-e532-4460-9e65-bf40d9b39f34",
+          "name": "Create a new BitSight intelligence report",
+          "request": {
+            "name": "Create a new BitSight intelligence report",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "external-intelligence-reports",
+                "bitsight"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "null",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "d1a1896a-8224-4b01-adce-dccfd09c94c2",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "external-intelligence-reports",
+                    "bitsight"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "null",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"06557808-4e17-b9ae-e605-332565f2a1f9\",\n  \"clientOrgId\": 8561,\n  \"clientOrgName\": \"string\",\n  \"vendorOrgId\": 3266,\n  \"vendorOrgName\": \"string\",\n  \"vendorOrgDescription\": \"string\",\n  \"vendorOrgFaviconUrl\": \"string\",\n  \"source\": \"BITSIGHT\",\n  \"reportDate\": \"1962-04-06T09:13:15.706Z\",\n  \"link\": \"string\",\n  \"rating\": \"string\",\n  \"typeName\": \"string\",\n  \"guid\": \"string\",\n  \"customId\": \"string\",\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"primaryDomain\": \"string\",\n  \"ratingRange\": \"string\",\n  \"ratingColor\": \"string\",\n  \"confidence\": \"string\",\n  \"ratingValue\": 6235,\n  \"grade\": \"string\",\n  \"domain\": \"string\",\n  \"score\": 6374,\n  \"triggeredRuleCount\": 6125,\n  \"maxRuleCount\": 8822,\n  \"firstSeen\": \"1987-10-16T11:19:10.986Z\",\n  \"lastSeen\": \"1995-05-02T21:16:24.398Z\",\n  \"criticalityLabel\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "352c7c71-445f-4b6e-9207-fd49c325fc59",
+          "name": "Bulk create BitSight intelligence reports",
+          "request": {
+            "name": "Bulk create BitSight intelligence reports",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "external-intelligence-reports",
+                "bitsight",
+                "bulk"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  null,\n  null\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "6e990a7d-1be7-40ff-bb84-8ed5f5646b5e",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "external-intelligence-reports",
+                    "bitsight",
+                    "bulk"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n  null,\n  null\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"totalCount\": 5022,\n  \"created\": [\n    \"0be1df0e-5dc4-def4-8c5f-e0c23bc14c7b\",\n    \"a1343a14-b724-5fc7-44a4-ac12cfcc1cdc\"\n  ],\n  \"backgroundedCount\": 7555,\n  \"backgrounded\": true,\n  \"totalFailureCount\": 6090\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4191e843-2a8e-4ebb-a62b-2348a7e40935",
+          "name": "Get all intelligence reports for a specific vendor",
+          "request": {
+            "name": "Get all intelligence reports for a specific vendor",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "external-intelligence-reports",
+                "vendor",
+                ":vendorDomain"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "vendorDomain",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5402ae43-ea93-466a-ad03-dad8dbfbc7a0",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "external-intelligence-reports",
+                    "vendor",
+                    ":vendorDomain"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "vendorDomain",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"id\": \"9e3ca984-76cd-810f-92a6-eb7a4c588919\",\n    \"clientOrgId\": 640,\n    \"clientOrgName\": \"string\",\n    \"vendorOrgId\": 9755,\n    \"vendorOrgName\": \"string\",\n    \"vendorOrgDescription\": \"string\",\n    \"vendorOrgFaviconUrl\": \"string\",\n    \"source\": \"SECURITY_SCORECARD\",\n    \"reportDate\": \"1990-11-15T11:34:17.381Z\",\n    \"link\": \"string\",\n    \"rating\": \"string\",\n    \"typeName\": \"string\",\n    \"guid\": \"string\",\n    \"customId\": \"string\",\n    \"name\": \"string\",\n    \"description\": \"string\",\n    \"primaryDomain\": \"string\",\n    \"ratingRange\": \"string\",\n    \"ratingColor\": \"string\",\n    \"confidence\": \"string\",\n    \"ratingValue\": 2022,\n    \"grade\": \"string\",\n    \"domain\": \"string\",\n    \"score\": 6568,\n    \"triggeredRuleCount\": 6733,\n    \"maxRuleCount\": 224,\n    \"firstSeen\": \"2000-10-01T22:01:58.368Z\",\n    \"lastSeen\": \"1951-07-08T04:40:25.071Z\",\n    \"criticalityLabel\": \"string\"\n  },\n  {\n    \"id\": \"d8e5b3c5-6ef9-ef6a-bb70-2086c5f7d74f\",\n    \"clientOrgId\": 3416,\n    \"clientOrgName\": \"string\",\n    \"vendorOrgId\": 9277,\n    \"vendorOrgName\": \"string\",\n    \"vendorOrgDescription\": \"string\",\n    \"vendorOrgFaviconUrl\": \"string\",\n    \"source\": \"RECORDED_FUTURE\",\n    \"reportDate\": \"2001-09-16T21:53:49.280Z\",\n    \"link\": \"string\",\n    \"rating\": \"string\",\n    \"typeName\": \"string\",\n    \"guid\": \"string\",\n    \"customId\": \"string\",\n    \"name\": \"string\",\n    \"description\": \"string\",\n    \"primaryDomain\": \"string\",\n    \"ratingRange\": \"string\",\n    \"ratingColor\": \"string\",\n    \"confidence\": \"string\",\n    \"ratingValue\": 9264,\n    \"grade\": \"string\",\n    \"domain\": \"string\",\n    \"score\": 5847,\n    \"triggeredRuleCount\": 5907,\n    \"maxRuleCount\": 5636,\n    \"firstSeen\": \"1982-10-26T07:44:42.504Z\",\n    \"lastSeen\": \"1957-12-07T12:06:58.781Z\",\n    \"criticalityLabel\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c5005113-9187-4814-8fe9-86685db92166",
+          "name": "Get the latest intelligence report for a vendor from a specific source",
+          "request": {
+            "name": "Get the latest intelligence report for a vendor from a specific source",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "external-intelligence-reports",
+                "vendor",
+                ":vendorDomain",
+                "latest",
+                ":source"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "vendorDomain",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "source",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "dece3f73-494f-44fe-8eff-e7fa7869ef73",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "external-intelligence-reports",
+                    "vendor",
+                    ":vendorDomain",
+                    "latest",
+                    ":source"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "vendorDomain",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "source",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"06557808-4e17-b9ae-e605-332565f2a1f9\",\n  \"clientOrgId\": 8561,\n  \"clientOrgName\": \"string\",\n  \"vendorOrgId\": 3266,\n  \"vendorOrgName\": \"string\",\n  \"vendorOrgDescription\": \"string\",\n  \"vendorOrgFaviconUrl\": \"string\",\n  \"source\": \"BITSIGHT\",\n  \"reportDate\": \"1962-04-06T09:13:15.706Z\",\n  \"link\": \"string\",\n  \"rating\": \"string\",\n  \"typeName\": \"string\",\n  \"guid\": \"string\",\n  \"customId\": \"string\",\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"primaryDomain\": \"string\",\n  \"ratingRange\": \"string\",\n  \"ratingColor\": \"string\",\n  \"confidence\": \"string\",\n  \"ratingValue\": 6235,\n  \"grade\": \"string\",\n  \"domain\": \"string\",\n  \"score\": 6374,\n  \"triggeredRuleCount\": 6125,\n  \"maxRuleCount\": 8822,\n  \"firstSeen\": \"1987-10-16T11:19:10.986Z\",\n  \"lastSeen\": \"1995-05-02T21:16:24.398Z\",\n  \"criticalityLabel\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://app.visotrust.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "3a6dcc53-7f6b-4abb-93e7-f9b6c3bf1895",
+    "name": "VISO TRUST API Documentation client-api-assessment-rest-resource client-api-external-intelligence-report-rest-resource API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "VISO TRUST",
+      "type": "text/plain"
+    }
+  }
+}

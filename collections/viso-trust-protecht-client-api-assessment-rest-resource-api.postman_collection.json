@@ -1,0 +1,785 @@
+{
+  "item": [
+    {
+      "id": "96a1c2eb-3c0f-4ffd-8d4d-56a102572b81",
+      "name": "client-api-assessment-rest-resource",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "97a09257-05a3-42c2-9abe-32287372ee03",
+          "name": "Update the follow-up settings of an in-progress assessment",
+          "request": {
+            "name": "Update the follow-up settings of an in-progress assessment",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "assessments",
+                ":id",
+                "followup"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<long>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"followupType\": \"<string>\",\n  \"followupRiskThreshold\": \"<string,null>\",\n  \"followupTimeline\": \"<string,null>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "08a6fc2e-de2c-4e5b-9bfc-ee2c55d88094",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "assessments",
+                    ":id",
+                    "followup"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<long>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"followupType\": \"<string>\",\n  \"followupRiskThreshold\": \"<string,null>\",\n  \"followupTimeline\": \"<string,null>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5da5bdd1-9ffe-47a2-a1fb-9f74d05bc2a6",
+          "name": "Update the expiration date of an in-progress assessment",
+          "request": {
+            "name": "Update the expiration date of an in-progress assessment",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "assessments",
+                ":id",
+                "expiration-date"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<long>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"expirationDate\": \"<dateTime>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "fb5978d1-81a9-4c0c-b174-c20b98d8f5f5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "assessments",
+                    ":id",
+                    "expiration-date"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<long>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"expirationDate\": \"<dateTime>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d9a8241a-8f1a-4fae-a153-96bf5c3398dd",
+          "name": "Start an Assessment",
+          "request": {
+            "name": "Start an Assessment",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "assessments"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "multipart/form-data"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "request",
+                  "value": "<string>",
+                  "type": "text",
+                  "contentType": "multipart/form-data",
+                  "description": "(Required) Information necessary to start the assessment.\n\nRecipient details are optional. When all of `recipientEmail`, `recipientFirstName`, and `recipientLastName`\nare omitted, the assessment is started in research mode (no vendor contact). Research-mode assessments\nmay also include any combination of uploaded `files` and/or `publicDocumentUrls`; if neither is provided,\nVISO will run public information search only.\n\nExample (vendor-contact assessment):\n{\n    \"relationshipId\": 1,\n    \"recipientEmail\": \"dan@example.com\",\n    \"recipientFirstName\": \"Dan\",\n    \"recipientLastName\": \"Example\",\n    \"publicDocumentUrls\": [\"google.com\"],\n    \"followupType\": \"MANUAL\",\n    \"followupRiskThreshold\": null,\n    \"followupTimeline\": null,\n    \"collectionTimeline\": null,\n    \"noVendorResponseAction\": null,\n    \"aiProcessingOnly\": false,\n    \"questionnaires\": [\"00000000-0000-0000-0000-000000000000\"]\n}\n\nExample (research-only assessment):\n{\n    \"relationshipId\": 1\n}"
+                },
+                {
+                  "key": "files",
+                  "value": "[\"<binary>\",\"<binary>\"]",
+                  "type": "text",
+                  "description": "Any files to associate with the assessment"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "f2fc94d6-d504-4043-9249-89bcb02b7bfe",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "assessments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "(Required) Information necessary to start the assessment.\n\nRecipient details are optional. When all of `recipientEmail`, `recipientFirstName`, and `recipientLastName`\nare omitted, the assessment is started in research mode (no vendor contact). Research-mode assessments\nmay also include any combination of uploaded `files` and/or `publicDocumentUrls`; if neither is provided,\nVISO will run public information search only.\n\nExample (vendor-contact assessment):\n{\n    \"relationshipId\": 1,\n    \"recipientEmail\": \"dan@example.com\",\n    \"recipientFirstName\": \"Dan\",\n    \"recipientLastName\": \"Example\",\n    \"publicDocumentUrls\": [\"google.com\"],\n    \"followupType\": \"MANUAL\",\n    \"followupRiskThreshold\": null,\n    \"followupTimeline\": null,\n    \"collectionTimeline\": null,\n    \"noVendorResponseAction\": null,\n    \"aiProcessingOnly\": false,\n    \"questionnaires\": [\"00000000-0000-0000-0000-000000000000\"]\n}\n\nExample (research-only assessment):\n{\n    \"relationshipId\": 1\n}",
+                        "type": "text/plain"
+                      },
+                      "key": "request",
+                      "value": "<string>",
+                      "type": "text",
+                      "contentType": "multipart/form-data"
+                    },
+                    {
+                      "description": {
+                        "content": "Any files to associate with the assessment",
+                        "type": "text/plain"
+                      },
+                      "key": "files",
+                      "value": "[\"<binary>\",\"<binary>\"]",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "null",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fd898bea-d2e5-4e97-b474-2185493a42ac",
+          "name": "Get an assessment",
+          "request": {
+            "name": "Get an assessment",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "assessments",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<long>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b6216cc6-fe08-4a5b-88e3-be89d56a7106",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "assessments",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<long>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "null",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9a35a9de-2e6f-4283-b2ec-31de5f5fccc0",
+          "name": "Get the summary for an assessment",
+          "request": {
+            "name": "Get the summary for an assessment",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "assessments",
+                ":id",
+                "summary"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<long>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "933a1281-33d2-4b64-9f12-8c8fd3ab4ca9",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "assessments",
+                    ":id",
+                    "summary"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<long>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "null",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ed6462e7-d965-484c-b93f-1b2a4cb5206a",
+          "name": "Export the LLM assessment summary as a PDF",
+          "request": {
+            "name": "Export the LLM assessment summary as a PDF",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "assessments",
+                ":id",
+                "summary",
+                "export"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<long>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/pdf"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ecaae988-471c-4693-859b-a281afe30421",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "assessments",
+                    ":id",
+                    "summary",
+                    "export"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<long>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/pdf"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/pdf"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a672d4d1-31bf-4be9-a362-4ad24eb4d256",
+          "name": "Download artifacts for an assessment as a zip",
+          "request": {
+            "name": "Download artifacts for an assessment as a zip",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "assessments",
+                ":id",
+                "artifacts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<long>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/zip"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5a31fdba-b2af-4d4b-9c73-422e1177254e",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "assessments",
+                    ":id",
+                    "artifacts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<long>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/zip"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/zip"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://app.visotrust.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "969ab188-0d13-4643-9b38-e869de0ac6ea",
+    "name": "VISO TRUST API Documentation client-api-assessment-rest-resource API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "VISO TRUST",
+      "type": "text/plain"
+    }
+  }
+}
