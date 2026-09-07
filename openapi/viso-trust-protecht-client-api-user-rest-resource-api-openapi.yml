@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: VISO TRUST API Documentation client-api-assessment-rest-resource client-api-user-rest-resource API
+  title: VISO TRUST API Documentation client-api-assessment-rest-resource Client API User Rest Resource API
   description: VISO TRUST
   version: v1.0
 servers:
@@ -84,20 +84,6 @@ paths:
                 $ref: '#/components/schemas/User'
 components:
   schemas:
-    UserCreateRequest:
-      type: object
-      default: null
-      properties:
-        email:
-          type: string
-        firstName:
-          type: string
-        lastName:
-          type: string
-      required:
-      - email
-      - firstName
-      - lastName
     User:
       type: object
       default: null
@@ -118,6 +104,20 @@ components:
           enum:
           - ACTIVE
           - INACTIVE
+    UserCreateRequest:
+      type: object
+      default: null
+      properties:
+        email:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+      required:
+      - email
+      - firstName
+      - lastName
   securitySchemes:
     bearerAuth:
       type: http

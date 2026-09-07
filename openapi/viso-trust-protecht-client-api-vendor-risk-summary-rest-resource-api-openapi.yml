@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: VISO TRUST API Documentation client-api-assessment-rest-resource client-api-vendor-risk-summary-rest-resource API
+  title: VISO TRUST API Documentation client-api-assessment-rest-resource Client API Vendor Risk Summary Rest Resource API
   description: VISO TRUST
   version: v1.0
 servers:
@@ -91,18 +91,6 @@ components:
         summaryGeneratedAt:
           type: string
           format: date-time
-    AggregateControlDomainSummary:
-      type: object
-      properties:
-        domain:
-          type: string
-        highestRiskLevel:
-          type: string
-        affectedRelationships:
-          type: array
-          items:
-            type: integer
-            format: int64
     RelationshipEntry:
       type: object
       properties:
@@ -145,6 +133,18 @@ components:
           type: string
         riskLevel:
           type: string
+    AggregateControlDomainSummary:
+      type: object
+      properties:
+        domain:
+          type: string
+        highestRiskLevel:
+          type: string
+        affectedRelationships:
+          type: array
+          items:
+            type: integer
+            format: int64
   securitySchemes:
     bearerAuth:
       type: http
