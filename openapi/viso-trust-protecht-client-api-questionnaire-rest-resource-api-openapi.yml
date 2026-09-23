@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: VISO TRUST API Documentation client-api-assessment-rest-resource Client API Questionnaire Rest Resource API
+  title: VISO TRUST API Documentation Client API Questionnaire Rest…
   description: VISO TRUST
   version: v1.0
 servers:
@@ -15,7 +15,7 @@ paths:
     get:
       tags:
       - client-api-questionnaire-rest-resource
-      summary: Get all questionnaires available for a relationship.
+      summary: Get all questionnaires available for a relationship
       description: Returns every active organization-level questionnaire alongside its effective enabled state for the given relationship. A questionnaire is enabled for the relationship when it has been explicitly enabled via `PUT /relationships/{id}/questionnaires`, or when no relationship-level configuration exists and the questionnaire is enabled at the organization level.
       operationId: getQuestionnairesForRelationship
       parameters:
@@ -37,7 +37,7 @@ paths:
     put:
       tags:
       - client-api-questionnaire-rest-resource
-      summary: Update which questionnaires are enabled for a relationship.
+      summary: Update which questionnaires are enabled for a relationship
       description: Replaces the relationship's enabled-questionnaire list with the provided ids. Any active organization questionnaire not included in `enabledQuestionnaireIds` is disabled for the relationship.
       operationId: updateQuestionnairesForRelationship
       parameters:
@@ -66,7 +66,7 @@ paths:
     get:
       tags:
       - client-api-questionnaire-rest-resource
-      summary: Get all questionnaires available to your organization.
+      summary: Get all questionnaires available to your organization
       description: Returns the active questionnaires configured for your organization. Use `GET /relationships/{id}/questionnaires` to see which questionnaires are enabled for a particular relationship, and `PUT /relationships/{id}/questionnaires` to enable or disable them per relationship before passing their ids to the Start Assessment endpoint via the `questionnaires` field.
       operationId: getAllQuestionnairesForCurrentClient
       responses:
@@ -101,21 +101,6 @@ components:
         createdDate:
           type: string
           format: date-time
-    RelationshipQuestionnairesUpdateInput:
-      type: object
-      default: null
-      description: Replaces the relationship's enabled-questionnaire list. Every active organization-level questionnaire not included in `enabledQuestionnaireIds` is marked disabled for the relationship, overriding the organization-level default.
-      properties:
-        enabledQuestionnaireIds:
-          type: array
-          default: ''
-          description: Ids of questionnaires to enable for this relationship. Each id must reference an active organization-level questionnaire returned by `GET /questionnaires` or `GET /relationships/{id}/questionnaires`; unknown ids return 404. Pass an empty set to disable all questionnaires for the relationship.
-          items:
-            type: string
-            format: uuid
-          uniqueItems: true
-      required:
-      - enabledQuestionnaireIds
     QuestionnaireView:
       type: object
       default: null
@@ -137,6 +122,21 @@ components:
         createdDate:
           type: string
           format: date-time
+    RelationshipQuestionnairesUpdateInput:
+      type: object
+      default: null
+      description: Replaces the relationship's enabled-questionnaire list. Every active organization-level questionnaire not included in `enabledQuestionnaireIds` is marked disabled for the relationship, overriding the organization-level default.
+      properties:
+        enabledQuestionnaireIds:
+          type: array
+          default: ''
+          description: Ids of questionnaires to enable for this relationship. Each id must reference an active organization-level questionnaire returned by `GET /questionnaires` or `GET /relationships/{id}/questionnaires`; unknown ids return 404. Pass an empty set to disable all questionnaires for the relationship.
+          items:
+            type: string
+            format: uuid
+          uniqueItems: true
+      required:
+      - enabledQuestionnaireIds
   securitySchemes:
     bearerAuth:
       type: http

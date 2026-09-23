@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: VISO TRUST API Documentation Client API Assessment Rest Resource API
+  title: VISO TRUST API Documentation Client API Assessment Rest…
   description: VISO TRUST
   version: v1.0
 servers:
@@ -170,96 +170,6 @@ paths:
                 $ref: '#/components/schemas/StreamingResponseBody'
 components:
   schemas:
-    StreamingResponseBody: {}
-    UpdateAssessmentExpirationInput:
-      type: object
-      properties:
-        expirationDate:
-          type: string
-          format: date-time
-      required:
-      - expirationDate
-    UpdateAssessmentFollowupInput:
-      type: object
-      properties:
-        followupType:
-          type: string
-          enum:
-          - MANUAL
-          - AUTOMATIC
-          - CONCIERGE
-        followupRiskThreshold:
-          type:
-          - string
-          - 'null'
-          enum:
-          - NO_CONTEXT
-          - LOW
-          - MEDIUM
-          - HIGH
-          - EXTREME
-        followupTimeline:
-          type:
-          - string
-          - 'null'
-          enum:
-          - SEVEN_DAYS
-          - FOURTEEN_DAYS
-          - THIRTY_DAYS
-          - SIXTY_DAYS
-          - NINETY_DAYS
-      required:
-      - followupType
-    VisoUser:
-      type: object
-      default: null
-      properties:
-        businessUnit:
-          type: string
-        firstName:
-          type: string
-        lastName:
-          type: string
-        email:
-          type: string
-    AssessmentStatusHistory:
-      type: object
-      default: null
-      properties:
-        date:
-          type: string
-          format: date-time
-        status:
-          type: string
-          enum:
-          - NOT_ASSESSED
-          - AWAITING_REMEDIATION
-          - STARTED
-          - REVIEW_STARTED
-          - AUDIT_COMPLETED
-          - COMPLETED
-          - CANCELLED
-          - DELETED
-          - COLLECTING_INFORMATION
-    AssessmentRecommendation:
-      type: object
-      default: null
-      properties:
-        description:
-          type: string
-        recommendationType:
-          type: string
-          enum:
-          - EXPIRED
-          - HIGH_ASSURANCE
-          - CONTROL_DOMAINS
-          - COMBINED
-          - CERT_ONLY
-          - LOW_COVERAGE
-          - PRESUMED_ARTIFACT
-        createdDate:
-          type: string
-          format: date-time
     Assessment:
       type: object
       default: null
@@ -385,6 +295,96 @@ components:
           format: int64
         summary:
           type: string
+    UpdateAssessmentExpirationInput:
+      type: object
+      properties:
+        expirationDate:
+          type: string
+          format: date-time
+      required:
+      - expirationDate
+    AssessmentStatusHistory:
+      type: object
+      default: null
+      properties:
+        date:
+          type: string
+          format: date-time
+        status:
+          type: string
+          enum:
+          - NOT_ASSESSED
+          - AWAITING_REMEDIATION
+          - STARTED
+          - REVIEW_STARTED
+          - AUDIT_COMPLETED
+          - COMPLETED
+          - CANCELLED
+          - DELETED
+          - COLLECTING_INFORMATION
+    AssessmentRecommendation:
+      type: object
+      default: null
+      properties:
+        description:
+          type: string
+        recommendationType:
+          type: string
+          enum:
+          - EXPIRED
+          - HIGH_ASSURANCE
+          - CONTROL_DOMAINS
+          - COMBINED
+          - CERT_ONLY
+          - LOW_COVERAGE
+          - PRESUMED_ARTIFACT
+        createdDate:
+          type: string
+          format: date-time
+    UpdateAssessmentFollowupInput:
+      type: object
+      properties:
+        followupType:
+          type: string
+          enum:
+          - MANUAL
+          - AUTOMATIC
+          - CONCIERGE
+        followupRiskThreshold:
+          type:
+          - string
+          - 'null'
+          enum:
+          - NO_CONTEXT
+          - LOW
+          - MEDIUM
+          - HIGH
+          - EXTREME
+        followupTimeline:
+          type:
+          - string
+          - 'null'
+          enum:
+          - SEVEN_DAYS
+          - FOURTEEN_DAYS
+          - THIRTY_DAYS
+          - SIXTY_DAYS
+          - NINETY_DAYS
+      required:
+      - followupType
+    VisoUser:
+      type: object
+      default: null
+      properties:
+        businessUnit:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        email:
+          type: string
+    StreamingResponseBody: {}
   securitySchemes:
     bearerAuth:
       type: http

@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: VISO TRUST API Documentation client-api-assessment-rest-resource Client API Chat Rest Resource API
+  title: VISO TRUST API Documentation Client API Chat Rest Resource…
   description: VISO TRUST
   version: v1.0
 servers:

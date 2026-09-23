@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: VISO TRUST API Documentation client-api-assessment-rest-resource Client API External Intelligence Report Rest Resource API
+  title: VISO TRUST API Documentation Client API External…
   description: VISO TRUST
   version: v1.0
 servers:
@@ -182,32 +182,6 @@ paths:
                 $ref: '#/components/schemas/ExternalIntelligenceReportClientView'
 components:
   schemas:
-    SecurityScorecardReportCreateInput:
-      type: object
-      default: null
-      properties:
-        vendorDomain:
-          type: string
-        reportDate:
-          type: string
-          format: date-time
-        link:
-          type:
-          - string
-          - 'null'
-        grade:
-          type: string
-        domain:
-          type:
-          - string
-          - 'null'
-        score:
-          type:
-          - integer
-          - 'null'
-          format: int32
-      required:
-      - grade
     ExternalIntelligenceReportClientView:
       type: object
       properties:
@@ -325,56 +299,6 @@ components:
           type:
           - string
           - 'null'
-    BitsightReportCreateInput:
-      type: object
-      default: null
-      properties:
-        vendorDomain:
-          type: string
-        reportDate:
-          type: string
-          format: date-time
-        link:
-          type:
-          - string
-          - 'null'
-        guid:
-          type: string
-        customId:
-          type:
-          - string
-          - 'null'
-        name:
-          type:
-          - string
-          - 'null'
-        description:
-          type:
-          - string
-          - 'null'
-        primaryDomain:
-          type:
-          - string
-          - 'null'
-        ratingRange:
-          type:
-          - string
-          - 'null'
-        ratingColor:
-          type:
-          - string
-          - 'null'
-        confidence:
-          type:
-          - string
-          - 'null'
-        rating:
-          type:
-          - integer
-          - 'null'
-          format: int32
-      required:
-      - guid
     RecordedFutureReportCreateInput:
       type: object
       default: null
@@ -430,6 +354,56 @@ components:
       - entityType
       - riskLevel
       - riskScore
+    BitsightReportCreateInput:
+      type: object
+      default: null
+      properties:
+        vendorDomain:
+          type: string
+        reportDate:
+          type: string
+          format: date-time
+        link:
+          type:
+          - string
+          - 'null'
+        guid:
+          type: string
+        customId:
+          type:
+          - string
+          - 'null'
+        name:
+          type:
+          - string
+          - 'null'
+        description:
+          type:
+          - string
+          - 'null'
+        primaryDomain:
+          type:
+          - string
+          - 'null'
+        ratingRange:
+          type:
+          - string
+          - 'null'
+        ratingColor:
+          type:
+          - string
+          - 'null'
+        confidence:
+          type:
+          - string
+          - 'null'
+        rating:
+          type:
+          - integer
+          - 'null'
+          format: int32
+      required:
+      - guid
     BulkExternalIntelligenceReportResponse:
       type: object
       properties:
@@ -450,6 +424,32 @@ components:
         totalFailureCount:
           type: integer
           format: int32
+    SecurityScorecardReportCreateInput:
+      type: object
+      default: null
+      properties:
+        vendorDomain:
+          type: string
+        reportDate:
+          type: string
+          format: date-time
+        link:
+          type:
+          - string
+          - 'null'
+        grade:
+          type: string
+        domain:
+          type:
+          - string
+          - 'null'
+        score:
+          type:
+          - integer
+          - 'null'
+          format: int32
+      required:
+      - grade
   securitySchemes:
     bearerAuth:
       type: http
