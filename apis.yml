@@ -52,6 +52,14 @@ tags:
 - Company
 - Security
 - Third-Party Risk Management
+- GRC
+- Cybersecurity
+- Compliance
+- Artificial Intelligence
+tags_raw:
+- Company
+- Security
+- Third-Party Risk Management
 - Vendor Risk Management
 - TPRM
 - GRC
@@ -90,7 +98,7 @@ apis:
   - type: APIReference
     url: https://docs.visotrust.com/api-reference/authentication
 - aid: viso-trust-protecht:viso-trust-protecht-client-api-chat-rest-resource-api
-  name: VISO Trust (Protecht) client-api-chat-rest-resource API
+  name: VISO Trust (Protecht) Client API Chat Rest Resource API
   description: >-
     The client-api-chat-rest-resource API from VISO Trust (Protecht) — 1 operation(s) for client-api-chat-rest-resource.
   humanURL: https://docs.visotrust.com/
@@ -105,7 +113,7 @@ apis:
   - type: APIReference
     url: https://docs.visotrust.com/api-reference/authentication
 - aid: viso-trust-protecht:viso-trust-protecht-client-api-context-type-rest-resource-api
-  name: VISO Trust (Protecht) client-api-context-type-rest-resource API
+  name: VISO Trust (Protecht) Client API Context Type Rest Resource API
   description: >-
     The client-api-context-type-rest-resource API from VISO Trust (Protecht) — 1 operation(s) for client-api-context-type-rest-resource.
   humanURL: https://docs.visotrust.com/
@@ -120,7 +128,7 @@ apis:
   - type: APIReference
     url: https://docs.visotrust.com/api-reference/authentication
 - aid: viso-trust-protecht:viso-trust-protecht-client-api-data-type-rest-resource-api
-  name: VISO Trust (Protecht) client-api-data-type-rest-resource API
+  name: VISO Trust (Protecht) Client API Data Type Rest Resource API
   description: >-
     The client-api-data-type-rest-resource API from VISO Trust (Protecht) — 1 operation(s) for client-api-data-type-rest-resource.
   humanURL: https://docs.visotrust.com/
@@ -136,7 +144,7 @@ apis:
     url: https://docs.visotrust.com/api-reference/authentication
 - aid: >-
     viso-trust-protecht:viso-trust-protecht-client-api-external-intelligence-report-rest-resource-api
-  name: VISO Trust (Protecht) client-api-external-intelligence-report-rest-resource API
+  name: VISO Trust (Protecht) Client API External Intelligence Report Rest Resource API
   description: >-
     The client-api-external-intelligence-report-rest-resource API from VISO Trust (Protecht) — 8 operation(s)
     for client-api-external-intelligence-report-rest-resource.
@@ -153,7 +161,7 @@ apis:
   - type: APIReference
     url: https://docs.visotrust.com/api-reference/authentication
 - aid: viso-trust-protecht:viso-trust-protecht-client-api-questionnaire-rest-resource-api
-  name: VISO Trust (Protecht) client-api-questionnaire-rest-resource API
+  name: VISO Trust (Protecht) Client API Questionnaire Rest Resource API
   description: >-
     The client-api-questionnaire-rest-resource API from VISO Trust (Protecht) — 2 operation(s) for client-api-questionnaire-rest-resource.
   humanURL: https://docs.visotrust.com/
@@ -168,7 +176,7 @@ apis:
   - type: APIReference
     url: https://docs.visotrust.com/api-reference/authentication
 - aid: viso-trust-protecht:viso-trust-protecht-client-api-relationship-rest-resource-api
-  name: VISO Trust (Protecht) client-api-relationship-rest-resource API
+  name: VISO Trust (Protecht) Client API Relationship Rest Resource API
   description: >-
     The client-api-relationship-rest-resource API from VISO Trust (Protecht) — 11 operation(s) for client-api-relationship-rest-resource.
   humanURL: https://docs.visotrust.com/
@@ -183,7 +191,7 @@ apis:
   - type: APIReference
     url: https://docs.visotrust.com/api-reference/authentication
 - aid: viso-trust-protecht:viso-trust-protecht-client-api-user-rest-resource-api
-  name: VISO Trust (Protecht) client-api-user-rest-resource API
+  name: VISO Trust (Protecht) Client API User Rest Resource API
   description: >-
     The client-api-user-rest-resource API from VISO Trust (Protecht) — 2 operation(s) for client-api-user-rest-resource.
   humanURL: https://docs.visotrust.com/
@@ -198,7 +206,7 @@ apis:
   - type: APIReference
     url: https://docs.visotrust.com/api-reference/authentication
 - aid: viso-trust-protecht:viso-trust-protecht-client-api-vendor-directory-rest-resource-api
-  name: VISO Trust (Protecht) client-api-vendor-directory-rest-resource API
+  name: VISO Trust (Protecht) Client API Vendor Directory Rest Resource API
   description: >-
     The client-api-vendor-directory-rest-resource API from VISO Trust (Protecht) — 1 operation(s) for
     client-api-vendor-directory-rest-resource.
@@ -214,7 +222,7 @@ apis:
   - type: APIReference
     url: https://docs.visotrust.com/api-reference/authentication
 - aid: viso-trust-protecht:viso-trust-protecht-client-api-vendor-risk-summary-rest-resource-api
-  name: VISO Trust (Protecht) client-api-vendor-risk-summary-rest-resource API
+  name: VISO Trust (Protecht) Client API Vendor Risk Summary Rest Resource API
   description: >-
     The client-api-vendor-risk-summary-rest-resource API from VISO Trust (Protecht) — 2 operation(s) for
     client-api-vendor-risk-summary-rest-resource.
@@ -230,7 +238,7 @@ apis:
   - type: APIReference
     url: https://docs.visotrust.com/api-reference/authentication
 - aid: viso-trust-protecht:viso-trust-protecht-client-api-webhook-rest-resource-api
-  name: VISO Trust (Protecht) client-api-webhook-rest-resource API
+  name: VISO Trust (Protecht) Client API Webhook Rest Resource API
   description: >-
     The client-api-webhook-rest-resource API from VISO Trust (Protecht) — 2 operation(s) for client-api-webhook-rest-resource.
   humanURL: https://docs.visotrust.com/
