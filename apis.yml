@@ -258,6 +258,9 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: CapabilityMap
+  url: capabilities/viso-trust-protecht-capability-edges.yml
+  name: VISO Trust (Protecht) Business Capability Map
 - type: OpenAPI
   url: openapi/_original/viso-trust-protecht-openapi-original.json
 - type: Documentation

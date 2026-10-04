@@ -1,0 +1,67 @@
+slug: viso-trust-protecht
+provider: VISO Trust (Protecht)
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 5
+edges:
+- tag: client-api-vendor-risk-summary-rest-resource
+  spec_file: viso-trust-protecht-client-api-vendor-risk-summary-rest-resource-api-openapi.yml
+  capability_id: BC-510.30
+  capability_id_l1: BC-510
+  capability_name: Supplier Risk Management
+  confidence: 0.9
+  evidence: GET /api/v1/vendors/{id}/risk-summary 'Get vendor risk summary by vendor ID'; schemas VendorRiskSummaryResponse,
+    ControlDomainSummary
+  reason: Returns aggregated vendor risk posture by control domain — unambiguously supplier (third-party)
+    risk management reporting.
+- tag: client-api-external-intelligence-report-rest-resource
+  spec_file: viso-trust-protecht-client-api-external-intelligence-report-rest-resource-api-openapi.yml
+  capability_id: BC-510.30
+  capability_id_l1: BC-510
+  capability_name: Supplier Risk Management
+  confidence: 0.85
+  evidence: GET /api/v1/external-intelligence-reports/vendor/{vendorDomain} 'Get all intelligence reports
+    for a specific vendor'; createSecurityScorecardIntelligenceReport, createBitsightIntelligenceReport
+  reason: Ingests and retrieves third-party cyber-risk ratings (SecurityScorecard, BitSight, Recorded
+    Future) per vendor domain — directly realises supplier/third-party cyber risk assessment and monitoring.
+- tag: client-api-assessment-rest-resource
+  spec_file: viso-trust-protecht-client-api-assessment-rest-resource-api-openapi.yml
+  capability_id: BC-510.30
+  capability_id_l1: BC-510
+  capability_name: Supplier Risk Management
+  confidence: 0.82
+  evidence: POST /api/v1/assessments 'Start an Assessment', 'Get the summary for an assessment', schema
+    AssessmentRecommendation; vendor automates 'vendor security due diligence'
+  reason: Operations start and retrieve third-party security risk assessments with recommendations and
+    artifacts, which is cyber/security risk assessment of suppliers.
+- tag: client-api-questionnaire-rest-resource
+  spec_file: viso-trust-protecht-client-api-questionnaire-rest-resource-api-openapi.yml
+  capability_id: BC-510.30
+  capability_id_l1: BC-510
+  capability_name: Supplier Risk Management
+  confidence: 0.75
+  evidence: GET /api/v1/relationships/{id}/questionnaires 'Get all questionnaires available for a relationship';
+    'Update which questionnaires are enabled for a relationship'
+  reason: Questionnaires are the vendor security due-diligence instrument attached to third-party relationships
+    in this TPRM platform; supports supplier risk assessment. Some ambiguity with supplier onboarding/due
+    diligence (BC-510.10).
+- tag: client-api-relationship-rest-resource
+  spec_file: viso-trust-protecht-client-api-relationship-rest-resource-api-openapi.yml
+  capability_id: BC-510.10
+  capability_id_l1: BC-510
+  capability_name: Supplier Onboarding Management
+  confidence: 0.7
+  evidence: PUT /api/v1/relationships/{id}/onboard 'Onboard a relationship'; PUT /api/v1/relationships/{id}/offboard;
+    'Update third party contact details for a relationship'
+  reason: Creates, onboards, offboards and archives third-party (vendor) relationships with contacts and
+    assessment details — supplier onboarding/registration and relationship record keeping. L2 onboarding
+    is the best fit though the surface also spans assessment and lifecycle management.
